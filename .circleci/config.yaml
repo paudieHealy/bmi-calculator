@@ -2,12 +2,6 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-deployment:
-  prod:
-    branch: master
-    heroku:
-      appname: javaherokudevops
-
 version: 2
 jobs:
   build:
@@ -46,6 +40,12 @@ jobs:
         
       # run tests!
       - run: gradle test
+
+    deployment:
+      prod:
+        branch: master
+        heroku:
+          appname: javaherokudevops
 
 
 
