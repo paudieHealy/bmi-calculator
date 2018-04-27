@@ -1,1 +1,5 @@
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+language: ruby
+rvm:
+  - 2.2
+  - jruby
+  - 2.0.0-p247
